@@ -6,3 +6,6 @@ export const PostModel = z.object({
   contents: z.string(),
   userId: z.string(),
 })
+
+export interface PostModel extends z.infer<typeof PostModel> {
+}

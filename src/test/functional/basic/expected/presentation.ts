@@ -8,3 +8,6 @@ export const PresentationModel = z.object({
   created: z.date(),
   updated: z.date(),
 })
+
+export interface PresentationModel extends z.infer<typeof PresentationModel> {
+}

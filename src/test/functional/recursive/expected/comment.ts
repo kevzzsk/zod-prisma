@@ -7,6 +7,9 @@ export const CommentModel = z.object({
   parentId: z.string(),
 })
 
+export interface CommentModel extends z.infer<typeof CommentModel> {
+}
+
 export interface CompleteComment extends z.infer<typeof CommentModel> {
   parent: CompleteComment
   children: CompleteComment[]

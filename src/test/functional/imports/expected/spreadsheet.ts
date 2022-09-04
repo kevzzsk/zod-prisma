@@ -16,6 +16,9 @@ export const SpreadsheetModel = z.object({
   updated: z.date(),
 })
 
+export interface SpreadsheetModel extends z.infer<typeof SpreadsheetModel> {
+}
+
 export interface CompleteSpreadsheet extends z.infer<typeof SpreadsheetModel> {
   presentations: CompletePresentation[]
 }

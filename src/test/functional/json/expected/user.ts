@@ -12,6 +12,9 @@ export const UserModel = z.object({
   meta: jsonSchema,
 })
 
+export interface UserModel extends z.infer<typeof UserModel> {
+}
+
 export interface CompleteUser extends z.infer<typeof UserModel> {
   posts: CompletePost[]
 }

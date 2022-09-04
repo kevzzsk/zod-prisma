@@ -10,6 +10,9 @@ export const PresentationModel = z.object({
   updated: z.date(),
 })
 
+export interface PresentationModel extends z.infer<typeof PresentationModel> {
+}
+
 export interface CompletePresentation extends z.infer<typeof PresentationModel> {
   spreadsheets: CompleteSpreadsheet[]
 }

@@ -162,7 +162,7 @@ export const generateSchemaForModel = (
 	sourceFile.addInterface({
 		name: modelName(model.name),
 		isExported: true,
-		extends: [`z.infer<typeof ${modelName(model.name)}>`]
+		extends: [`z.infer<typeof ${modelName(model.name)}>`],
 	})
 }
 
