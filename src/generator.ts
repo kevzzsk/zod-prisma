@@ -158,6 +158,12 @@ export const generateSchemaForModel = (
 			},
 		],
 	})
+
+	sourceFile.addInterface({
+		name: modelName(model.name),
+		isExported: true,
+		extends: [`z.infer<typeof ${modelName(model.name)}>`]
+	})
 }
 
 export const generateRelatedSchemaForModel = (
