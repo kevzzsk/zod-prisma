@@ -6417,6 +6417,11 @@ zip-stream@^3.0.1:
     compress-commons "^3.0.0"
     readable-stream "^3.6.0"
 
+zod-to-ts@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/zod-to-ts/-/zod-to-ts-1.1.1.tgz#3dce0454a9a4c3f1e6aa4a3c8079e9c32885c0ec"
+  integrity sha512-7UGV+GnuKLUyJbJeyrkfMqCP8wk37dFkOwguIWN/jVL7kQg2e1N5o0SDPVodlfTutxeAP9IRXsWLoSlEnmetCA==
+
 zod@^3.11.6:
   version "3.11.6"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.11.6.tgz#e43a5e0c213ae2e02aefe7cb2b1a6fa3d7f1f483"

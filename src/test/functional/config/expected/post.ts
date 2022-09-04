@@ -8,8 +8,7 @@ export const _postSchema = z.object({
   userId: z.string(),
 })
 
-export interface _postSchema extends z.infer<typeof _postSchema> {
-}
+export type _postSchema = z.infer<typeof _postSchema>
 
 export interface CompletePost extends z.infer<typeof _postSchema> {
   author: CompleteUser

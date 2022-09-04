@@ -16,5 +16,4 @@ export const PostModel = z.object({
   contents: z.string().max(10240),
 })
 
-export interface PostModel extends z.infer<typeof PostModel> {
-}
+export type PostModel = z.infer<typeof PostModel>

@@ -6,8 +6,7 @@ export const PostModel = z.object({
   authorId: z.number().int(),
 })
 
-export interface PostModel extends z.infer<typeof PostModel> {
-}
+export type PostModel = z.infer<typeof PostModel>
 
 export interface CompletePost extends z.infer<typeof PostModel> {
   author: CompleteUser

@@ -7,8 +7,7 @@ export const _userSchema = z.object({
   email: z.string(),
 })
 
-export interface _userSchema extends z.infer<typeof _userSchema> {
-}
+export type _userSchema = z.infer<typeof _userSchema>
 
 export interface CompleteUser extends z.infer<typeof _userSchema> {
   posts: CompletePost[]

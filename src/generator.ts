@@ -159,10 +159,12 @@ export const generateSchemaForModel = (
 		],
 	})
 
-	sourceFile.addInterface({
+	sourceFile.addTypeAlias({
 		name: modelName(model.name),
 		isExported: true,
-		extends: [`z.infer<typeof ${modelName(model.name)}>`],
+		type: (writer) => {
+			writer.write(`z.infer<typeof ${modelName(model.name)}>`)
+		},
 	})
 }
 

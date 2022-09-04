@@ -5,8 +5,7 @@ export const UserModel = z.object({
   id: z.string(),
 })
 
-export interface UserModel extends z.infer<typeof UserModel> {
-}
+export type UserModel = z.infer<typeof UserModel>
 
 export interface CompleteUser extends z.infer<typeof UserModel> {
   keychain?: CompleteKeychain | null

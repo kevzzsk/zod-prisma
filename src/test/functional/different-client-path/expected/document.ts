@@ -9,5 +9,4 @@ export const DocumentModel = z.object({
   updated: z.date(),
 })
 
-export interface DocumentModel extends z.infer<typeof DocumentModel> {
-}
+export type DocumentModel = z.infer<typeof DocumentModel>

@@ -6,5 +6,4 @@ export const UserModel = z.object({
   email: z.string(),
 })
 
-export interface UserModel extends z.infer<typeof UserModel> {
-}
+export type UserModel = z.infer<typeof UserModel>
